@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>WATCH STORE</title>
+    <style>
+        .information {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .information h3,
+        p {
+            font-family: 'roboto';
+        }
+
+        .information h3 {
+            font-weight: 600;
+            color: black;
+            font-size: 48px;
+            padding: 2rem 0;
+        }
+
+        .information p {
+            color: #A0A0A0;
+        }
+
+        .form {
+            padding: 2rem;
+            display: flex;
+        }
+
+        .form .transfer {
+            border-right: 1px solid #A0A0A0;
+        }
+        
+
+        .form p{
+            color: #2E3E93;
+            font-size: 20px;
+            margin-bottom: 0.5rem;
+            font-family: 'roboto';
+            font-weight: 400;
+        }
+
+        .buttons .continue {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 400px;
+            height: 75px;
+            padding: 0.5rem 1rem;
+            background: #CC0E0E;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            margin-bottom: 1rem;
+        }
+
+        .buttons .cancel {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 400px;
+            height: 75px;
+            padding: 0.5rem 1rem;
+            background: #A0A0A0;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+        }
+
+        input {
+            background-color: #E5E5E5 !important;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            .information .timeline{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .information .timeline img{
+                width: 80%;
+            }
+
+            .information h3,p{
+                font-family: 'roboto';
+            }
+
+            .information h3{
+                font-weight: 600;
+                color: black;
+                font-size: 48px;
+                padding: 2rem 0;
+            }
+            
+            .information p{
+                color: #A0A0A0;
+            }
+
+            .form{
+                flex-direction: column;
+            }
+
+            .form .transfer{
+                width: 100% !important;
+            }
+
+            .form .transfer{
+                border-right: none;
+                border-bottom: 1px solid #A0A0A0;
+                padding-bottom: 1rem;
+            }
+
+            .form .transfer p{
+                text-align: center;
+            }
+
+            .bank{
+                flex-direction: column !important;
+            }
+
+            .form .formulir{
+                width: 100% !important;
+                padding-top: 20px;
+            }
+
+
+            .buttons .continue{
+                width: 80%;
+            }
+
+            .buttons .cancel{
+                width: 80%;
+            }
+
+            .page-5 {
+                padding: 20px;
+                flex-direction: column;
+            }
+
+            .logos img {
+                width: 60px;
+                height: 60px;
+            }
+
+            p.address {
+                font-family: 'roboto';
+                font-size: 20px;
+                color: #00154A;
+            }
+
+            div.address {
+                text-align: left;
+            }
+
+            div.address .reguler {
+                color: #A0A0A0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Start Nav -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand brand mx-auto" href="index.html">WATCH STORE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        <!-- End Nav -->
+
+        <div class="information">
+            <div class="timeline">
+                <img src="./assets/images/timeline2.png" alt="" srcset="">
+            </div>
+            <h3 class="text-center">
+                Booking Information
+            </h3>
+            <p class="text-center">
+                Please fill up the blank fields below
+            </p>
+        </div>
+
+        <div class="form">
+            <div class="transfer w-50 d-flex flex-column">
+                <p>Transfer Pembayaran</p>
+                <p>Tax 10%</p>
+                <p>Subtotal : IDR 10.000.000</p>
+                <p>Subtotal : IDR 11.000.000</p>
+                <div class="bank d-flex">
+                    <img class="p-4" src="./assets/images/bca.png" alt="">
+                    <div class="d-flex flex-column">
+                        <p>Bank Central Asia</p>
+                        <p>1234 5678</p>
+                        <p>WATCHSTORE</p>
+                    </div>
+                </div>
+                <div class="bank d-flex">
+                    <img class="p-4" src="./assets/images/bsi.png" alt="">
+                    <div class="d-flex flex-column">
+                        <p>Bank Syariah Indonesia</p>
+                        <p>1234 5678</p>
+                        <p>WATCHSTORE</p>
+                    </div>
+                </div>
+            </div>
+            <div class="formulir roboto d-flex flex-column justify-content-center w-50 px-5">
+                <div class="form-group">
+                    <label for="">Upload Bukti Transfer</label>
+                    <input class="form-control" type="text" name="name" value="Browse a file" id="">
+                </div>
+                <div class="form-group">
+                    <label for="">Asal Bank</label>
+                    <input class="form-control w-100" type="text" name="name" value="Please type here..." id="">
+                </div>
+                <div class="form-group">
+                    <label for="">Nama Pengirim</label>
+                    <input class="form-control w-100" type="text" name="name" value="Please type here..." id="">
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons d-flex flex-column p-5 align-items-center">
+            <a href="finish.html" class="continue text-center text-white">
+                Confirm Payment
+            </a>
+
+            <a href="index.html" class="cancel text-center text-white">
+                Cancel
+            </a>
+        </div>
+
+        <div class="page page-5 d-flex justify-content-around align-items-center">
+            <div class="socials d-flex flex-column">
+                <div class="title">
+                    <h3>WATCH STORE</h3>
+                </div>
+                <div class="logos d-flex justify-content-around">
+                    <img src="./assets/images/ig.png" alt="">
+                    <img src="./assets/images/fb.png" alt="">
+                    <img src="./assets/images/yt.png" alt="">
+                </div>
+            </div>
+
+            <div class="address">
+                <p class="address">
+                    Address
+                </p>
+                <p class="reguler">
+                    Jl. Kaharuddin Nasution No.01
+                </p>
+                <p class="reguler">
+                    Kecamatan Marpoyan Damai, Pekanbaru, Riau 28282
+                </p>
+                <p class="reguler">
+                    0812-1234-578
+                </p>
+            </div>
+            
+            </div>
+            
+            <footer>
+                <p>
+                    Copyright 2022- All Right Company - <a href="index.html">Watchstore</a>
+                </p>
+            </footer>
+    </div>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
